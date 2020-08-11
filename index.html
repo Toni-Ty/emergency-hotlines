@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Emergency Hotlines</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div id="header">
+        <h1>The Emergency Hotline</h1>
+
+    </div>
+
+    <div class="hotline-info">
+        <br>
+        Experiencing a Crisis<span id="span-color">?</span>
+        <br>
+        <p>Please Select From Below To Speak With Someone:</p><br>
+        <select id="hotline-form">
+            <option value="Suicide">Suicide</option>
+            <option value="Depression">Depression</option>
+            <option value="Substance Abuse">Substance Abuse</option>
+            <option value="Domestic Violence">Domestic Violence</option>
+        </select>
+        <button type="button" onclick="getCrisisOption()" id="btn">Submit</button>
+
+
+        <p id="results"></p>
+
+        <form id="contact-form" method="POST" name="cform">
+            <h1> For a free mental health newsletter
+                <br>
+                fill out the form below:</h1><br>
+            <label for="name" id="fname-label">First Name:</label>
+            <input type="text" name="first-name" id="first-name"><br>
+            <label for="name" id="lname-label">Last Name:</label>
+            <input type="text" name="last-name" id="last-name"><br>
+            <label for="email" id="email-label">Email:</label>
+            <input type="email" name="email" id="email"><br>
+            <button type="submit" id="btn2" value="submit">Submit</button>
+        </form>
+
+    </div>
+    </div>
+
+    <script src="app.js" async defer></script>
+</body>
+
+</html>
