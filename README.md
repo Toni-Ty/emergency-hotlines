@@ -1,5 +1,5 @@
 # Emergency-Hotlines
-![Screenshot_2020-08-10 Emergency Hotlines](https://user-images.githubusercontent.com/40587355/89852976-bbf01d00-db55-11ea-9ec9-14494cc271f0.jpg)
+![Screenshot_2020-08-20 Emergency Hotlines](https://user-images.githubusercontent.com/40587355/90847952-4b08ec00-e331-11ea-8970-75f22e05da50.png)
 **A simple application designed to connect people, experiencing a mental health crisis, to contact centers**
 
 # Clone this repository
