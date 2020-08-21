@@ -1,54 +1,90 @@
 <!DOCTYPE html>
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Emergency Hotlines</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Emergency Hotlines</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
-    <div id="header">
-        <h1>The Emergency Hotline</h1>
+  <div class="nav-bar">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary" id="navbar">
+
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="index2.html">Newsletter <span class="sr-only">(current)</span></a>
+          </li>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+          </form>
+      </div>
+    </nav>
+  </div>
+
+  <div id="header">
+    <div class="jumbotron">
+      <h1>The Emergency Hotlines</h1>
+      <img src="/images/connection-2826506_640.png" id="puzzle-pic" alt="puzzle inside globe"></a>
 
     </div>
 
-    <div class="hotline-info">
-        <br>
-        Experiencing a Crisis<span id="span-color">?</span>
-        <br>
-        <p>Please Select From Below To Speak With Someone:</p><br>
-        <select id="hotline-form">
-            <option value="Suicide">Suicide</option>
-            <option value="Depression">Depression</option>
-            <option value="Substance Abuse">Substance Abuse</option>
-            <option value="Domestic Violence">Domestic Violence</option>
-        </select>
-        <button type="button" onclick="getCrisisOption()" id="btn">Submit</button>
+  </div>
+
+  <div class="hotline-info">
+
+    <p id="suicide-prevention">If you are considering harming yourself please click on the resources below:</p>
+    <p id="med-emerg">Please call 911 for mental and psychological emergencies</p>
+    <a href="https://suicidepreventionlifeline.org/" target="_blank" id="link">Suicide Prevention</a><br>
+    <p class="phone-num"><span class="fa fa-phone" id="fa-phone"></span>(800)-273-8255</p>
+    <a href="https://www.crisistextline.org/topics/suicide/#how-to-get-help-if-youre-thinking-about-ending-your-life-1"
+      target="_blank" id="link">Crisis Text Line</a><br>
+    <p id="text-crisis">Text HOME to 741741</p>
+    <a href="https://www.boystown.org/hotline/Pages/default.aspx" target="_blank" id="link">BoysTown National
+      Hotline</a><br>
+    <p class="phone-num"><span class="fa fa-phone" id="fa-phone"></span>(800)-448-3000</p>
+    <p id="substance-abuse">For help with substance abuse:</p>
+    <a href="https://www.samhsa.gov/" target="_blank" id="link">Samhsa Substance Abuse and Mental Health Services
+      Administration</a><br>
+    <p class="phone-num"><span class="fa fa-phone" id="fa-phone"></span>(800)662-4357</p>
+    <a href="http://drughelpline.org/" target="_blank" id="link">National Drug Helpline</a><br>
+
+    <p class="phone-num"><span class="fa fa-phone" id="fa-phone"></span>(844)289-0879</p>
+
+    <p id="domestic-abuse">For help with domestic and child abuse:</p>
+    <a href="https://www.thehotline.org/resources/victims-and-survivors/" target="_blank" id="link">National Domestic
+      Violence Hotline</a><br>
+    <p class="phone-num"><span class="fa fa-phone" id="fa-phone"></span>(800)799-7233</p>
+
+    <a href="https://www.childhelp.org/" target="_blank" id="link">Childhelp</a><br>
+    <p class="phone-num"><span class="fa fa-phone" id="fa-phone"></span>(800)422-4453</p>
+    <p class="phone-num"><span class="fa fa-phone" id="fa-phone"></span>(800)422-4453</p>
 
 
-        <p id="results"></p>
-
-        <form id="contact-form" method="POST" name="cform">
-            <h1> For a free mental health newsletter
-                <br>
-                fill out the form below:</h1><br>
-            <label for="name" id="fname-label">First Name:</label>
-            <input type="text" name="first-name" id="first-name"><br>
-            <label for="name" id="lname-label">Last Name:</label>
-            <input type="text" name="last-name" id="last-name"><br>
-            <label for="email" id="email-label">Email:</label>
-            <input type="email" name="email" id="email"><br>
-            <button type="submit" id="btn2" value="submit">Submit</button>
-        </form>
-
+    <div class="footer">
+      <p>&copy; Copyright 2020</p>
     </div>
-    </div>
 
-    <script src="app.js" async defer></script>
+
+  </div>
+
+  <script src="app.js" async defer></script>
 </body>
 
 </html>
