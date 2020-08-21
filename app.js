@@ -1,26 +1,5 @@
 const contactForm = document.getElementById("contact-form");
-const submitForm = document.getElementById("btn2");
-
-getCrisisOption = () => {
-  const hotlineForm = document.getElementById("hotline-form");
-  const results = document.getElementById("results");
-
-  let result = hotlineForm.value;
-  console.log(result);
-
-  if (result === "Suicide") {
-    results.innerHTML = `${result}: (800) 273-TALK (8255)`;
-  }
-  if (result === "Depression") {
-    results.innerHTML = `${result}: (800)-662-HELP (4357)`;
-  }
-  if (result === "Substance Abuse") {
-    results.innerHTML = `${result}: (800)-662-4357`;
-  }
-  if (result === "Domestic Violence") {
-    results.innerHTML = `${result}: (800) 799-7233`;
-  }
-};
+const submitForm = document.getElementById("submit-btn");
 
 contactForm.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -51,5 +30,4 @@ clearForm = () => {
   });
 };
 
-getCrisisOption();
 submitResourceForm();

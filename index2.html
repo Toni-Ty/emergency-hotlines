@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Emergency Hotlines</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Contact <span class="sr-only">(current)</span></a>
+        </li>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </div>
+  </nav>
+  <div id="header">
+    <div class="jumbotron">
+      <h1>The Emergency Hotline</h1>
+      <img src="/images/connection-2826506_640.png" id="puzzle-pic" alt="puzzle inside globe"></a>
+    </div>
+
+
+
+    <form id="contact-form" name="cform">
+      <h1>Subscribe to our weekly newsletter:</h1><br>
+      <p>Join now to receive free resources on mental health and wellness, research, and treatment. </p>
+
+      <div class="fa-icon"><i class="fa fa-envelope-open fa-2x" id="fa-envelope"></i></div>
+      <label for="name" id="fname-label">First Name:</label>
+      <input type="text" name="first-name" id="first-name"><br>
+      <label for="name" id="lname-label">Last Name:</label>
+      <input type="text" name="last-name" id="last-name"><br>
+      <label for="email" id="email-label">Email:</label>
+      <input type="email" name="email" id="email"><br>
+      <button class="btn btn-primary" type="submit" value="submit" id="submit-btn">Submit</button> <br>
+    </form>
+
+    <div class="footer">
+      <p>&copy; Copyright 2020</p>
+    </div>
+
+  </div>
+
+  <script src="app.js" async defer></script>
+</body>
+
+</html>
