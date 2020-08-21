@@ -1,17 +1,11 @@
-body,
-html {
+body {
   margin: 0;
-  height: 100%;
+  background-color: lightcyan;
 }
 
-#header {
-  background-image: url("/images/mountain.jpg");
-  height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.nav-bar {
+  margin-left: 375px;
 }
-
 #resource-list {
   color: black;
   font-size: 30px;
@@ -22,25 +16,12 @@ html {
   font-weight: bolder;
 }
 
-h1 {
-  margin-top: 0px;
-  text-align: center;
-  font-weight: bolder;
-  font-family: "Gill Sans";
-  font-size: 50px;
-  background-color: lightblue;
-}
 p {
   color: darkblue;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 .hotline-info {
   text-align: center;
-  font-size: 3rem;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 #hotline-form {
@@ -60,35 +41,20 @@ p {
   text-align: center;
 }
 
-#btn {
-  height: 30px;
-  background-color: lightblue;
-}
-
-#btn2 {
-  width: 90px;
-  height: 25px;
-  background-color: lightblue;
-}
-
 #contact-form {
   font-size: 2rem;
 }
 
 #contact-form h1 {
   color: black;
+  font-weight: bold;
+  font-size: 30px;
 }
 
-#last-name {
-  height: 25px;
-}
-
-#first-name {
-  height: 25px;
-}
-
+#first-name,
+#last-name,
 #email {
-  height: 25px;
+  height: 35px;
 }
 
 #email-label {
@@ -101,4 +67,113 @@ p {
 #lname-label {
   font-size: 30px;
   font-weight: bold;
+}
+
+#link {
+  font-size: 20px;
+  color: black;
+}
+
+#suicide-prevention {
+  font-size: 25px;
+  font-weight: bolder;
+  color: black;
+  text-align: center;
+}
+
+#substance-abuse {
+  font-size: 25px;
+  font-weight: bolder;
+  color: darkmagenta;
+  text-align: center;
+}
+#domestic-abuse {
+  font-size: 25px;
+  font-weight: bolder;
+  color: darkred;
+  text-align: center;
+}
+.jumbotron {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background-color: white;
+  color: darkblue;
+  font-weight: bold;
+  background-image: url(/images/woman-sad.jpg);
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  text-align: center;
+  height: 250px;
+}
+
+.jumbotron h1 {
+  color: red;
+  text-shadow: black 0.1rem 0.1rem 0.1rem;
+}
+
+#help-jumbo {
+  font-size: 25px;
+  color: black;
+}
+
+#puzzle-pic {
+  border-radius: 55px;
+  height: 80px;
+}
+
+#resource-link {
+  text-align: center;
+}
+#sticky-footer {
+  flex-shrink: none;
+}
+
+#link-newsletter {
+  font-size: 30px;
+  color: darkblue;
+  font-weight: bold;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+#fa-phone {
+  padding: 5px;
+  color: blue;
+}
+
+#contact-form {
+  text-align: center;
+}
+
+#fa-envelope {
+  color: blue;
+}
+
+.phone-num {
+  font-size: 20px;
+  color: #000;
+}
+
+#text-crisis {
+  font-size: 20px;
+  font-weight: bold;
+  color: rgba(182, 21, 231, 0.904);
+}
+
+#med-emerg {
+  color: red;
+  font-weight: 800;
+  font-size: 20px;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: blue;
+  color: white;
+  text-align: center;
+}
+
+.footer p {
+  color: white;
 }
