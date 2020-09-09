@@ -5,7 +5,7 @@ contactForm.addEventListener("submit", (e) => {
   e.preventDefault();
 });
 
-submitResourceForm = () => {
+let submitResourceForm = () => {
   let firstName = document.getElementById("first-name");
   let lastName = document.getElementById("last-name");
   let email = document.getElementById("email");
@@ -23,7 +23,7 @@ submitResourceForm = () => {
   clearForm();
 };
 
-clearForm = () => {
+let clearForm = () => {
   const inputs = document.querySelectorAll("input");
   submitForm.addEventListener("click", () => {
     inputs.forEach((input) => (input.value = ""));
