@@ -1,16 +1,19 @@
-const contactForm = document.getElementById("contact-form");
-const submitForm = document.getElementById("submit-btn");
+"use strict";
 
-contactForm.addEventListener("submit", (e) => {
+const submitNewsLetterBtn = document.getElementById("submit-newsletter-btn");
+const newsLetterContactForm = document.querySelector(".newsletter-contact-form");
+
+newsLetterContactForm.addEventListener("submit", (e) => {
   e.preventDefault();
 });
 
-let submitResourceForm = () => {
-  let firstName = document.getElementById("first-name");
-  let lastName = document.getElementById("last-name");
-  let email = document.getElementById("email");
+let submitNewsLetter = () => {
 
-  submitForm.addEventListener("click", (e) => {
+  let firstName = document.querySelector(".first-name");
+  let lastName = document.querySelector(".last-name");
+  let email = document.querySelector(".email");
+
+  submitNewsLetterBtn.addEventListener("click", (e) => {
     firstName = firstName.value;
     localStorage.setItem("firstName", firstName);
 
@@ -20,14 +23,17 @@ let submitResourceForm = () => {
     email = email.value;
     localStorage.setItem("email", email);
   });
-  clearForm();
+
+  clearNewsLetterForm();
 };
 
-let clearForm = () => {
+//clear all newsletter fields
+let clearNewsLetterForm = () => {
   const inputs = document.querySelectorAll("input");
-  submitForm.addEventListener("click", () => {
+
+  submitNewsLetterBtn.addEventListener("click", () => {
     inputs.forEach((input) => (input.value = ""));
   });
 };
 
-submitResourceForm();
+submitNewsLetter();
