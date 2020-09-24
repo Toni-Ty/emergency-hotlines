@@ -11,9 +11,9 @@ const submitNewsLetter = () => {
 
   submitNewsLetterBtn.addEventListener("click", (e) => {
   
-  const firstName = document.querySelector(".first-name").value;
-  const lastName = document.querySelector(".last-name").value;
-  const email = document.querySelector(".email").value;
+    const firstName = document.querySelector(".first-name").value;
+    const lastName = document.querySelector(".last-name").value;
+    const email = document.querySelector(".email").value;
 
     
     localStorage.setItem("firstName", firstName);
