@@ -7,20 +7,17 @@ newsLetterContactForm.addEventListener("submit", (e) => {
   e.preventDefault();
 });
 
-let submitNewsLetter = () => {
-
-  let firstName = document.querySelector(".first-name");
-  let lastName = document.querySelector(".last-name");
-  let email = document.querySelector(".email");
+const submitNewsLetter = () => {
 
   submitNewsLetterBtn.addEventListener("click", (e) => {
-    firstName = firstName.value;
+  
+  const firstName = document.querySelector(".first-name").value;
+  const lastName = document.querySelector(".last-name").value;
+  const email = document.querySelector(".email").value;
+
+    
     localStorage.setItem("firstName", firstName);
-
-    lastName = lastName.value;
     localStorage.setItem("lastName", lastName);
-
-    email = email.value;
     localStorage.setItem("email", email);
   });
 
@@ -28,7 +25,7 @@ let submitNewsLetter = () => {
 };
 
 //clear all newsletter fields
-let clearNewsLetterForm = () => {
+const clearNewsLetterForm = () => {
   const inputs = document.querySelectorAll("input");
 
   submitNewsLetterBtn.addEventListener("click", () => {
