@@ -55,18 +55,17 @@ p {
   text-align: center;
 }
 .jumbotron {
-  font-family: Georgia, "Times New Roman", Times, serif;
   background-color: white;
-  color: darkblue;
-  font-weight: bold;
   background-image: url(/images/woman-sad.jpg);
   background-size: auto 100%;
   background-repeat: no-repeat;
   text-align: center;
   height: 250px;
+  font-weight: bold;
 }
 
 .jumbotron h1 {
+  font-family: Georgia, "Times New Roman", Times, serif;
   color: red;
   text-shadow: black 0.1rem 0.1rem 0.1rem;
 }
