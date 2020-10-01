@@ -10,20 +10,10 @@ newsLetterContactForm.addEventListener("submit", (e) => {
 const submitNewsLetter = () => {
 
   submitNewsLetterBtn.addEventListener("click", (e) => {
-<<<<<<< HEAD
-
-=======
-  
->>>>>>> 15e7db3efd94ded2bb91f6851d90cb36decbaab6
     const firstName = document.querySelector(".first-name").value;
     const lastName = document.querySelector(".last-name").value;
     const email = document.querySelector(".email").value;
 
-<<<<<<< HEAD
-
-=======
-    
->>>>>>> 15e7db3efd94ded2bb91f6851d90cb36decbaab6
     localStorage.setItem("firstName", firstName);
     localStorage.setItem("lastName", lastName);
     localStorage.setItem("email", email);
