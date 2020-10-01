@@ -3,91 +3,52 @@ body {
   background-color: lightcyan;
 }
 
-.nav-bar {
+#nav-bar {
   margin-left: 375px;
-}
-#resource-list {
-  color: black;
-  font-size: 30px;
-}
-
-#span-color {
-  color: darkred;
-  font-weight: bolder;
 }
 
 p {
   color: darkblue;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
-.hotline-info {
+#hotline-info {
   text-align: center;
 }
 
-#hotline-form {
-  height: 30px;
-}
-
-#results {
-  text-align: center;
-  font-family: "Times New Roman", "Times", "serif";
-  font-weight: bolder;
-  font-size: 1.5rem;
-  color: black;
-  margin-bottom: 45px;
-}
-
-.findings {
-  text-align: center;
-}
-
-#contact-form {
-  font-size: 2rem;
-}
-
-#contact-form h1 {
-  color: black;
-  font-weight: bold;
-  font-size: 30px;
-}
-
-#first-name,
-#last-name,
-#email {
+.first-name,
+.last-name,
+.email {
   height: 35px;
 }
 
-#email-label {
-  font-size: 30px;
-  margin-right: 65px;
+.email-label {
+  margin-right: 83px;
+}
+
+.lname-label {
+  margin-right: 5px;
+}
+
+.email-label,
+.fname-label,
+.lname-label {
   font-weight: bold;
 }
 
-#fname-label,
-#lname-label {
-  font-size: 30px;
-  font-weight: bold;
-}
-
-#link {
-  font-size: 20px;
-  color: black;
-}
-
-#suicide-prevention {
+.suicide-prevention {
   font-size: 25px;
   font-weight: bolder;
   color: black;
   text-align: center;
 }
 
-#substance-abuse {
+.substance-abuse {
   font-size: 25px;
   font-weight: bolder;
   color: darkmagenta;
   text-align: center;
 }
-#domestic-abuse {
+.domestic-abuse {
   font-size: 25px;
   font-weight: bolder;
   color: darkred;
@@ -110,37 +71,25 @@ p {
   text-shadow: black 0.1rem 0.1rem 0.1rem;
 }
 
-#help-jumbo {
-  font-size: 25px;
-  color: black;
-}
-
 #puzzle-pic {
   border-radius: 55px;
   height: 80px;
 }
 
-#resource-link {
-  text-align: center;
-}
-#sticky-footer {
-  flex-shrink: none;
-}
-
-#link-newsletter {
-  font-size: 30px;
-  color: darkblue;
-  font-weight: bold;
-  font-family: Georgia, "Times New Roman", Times, serif;
-}
-
-#fa-phone {
+.fa-phone {
   padding: 5px;
   color: blue;
 }
 
-#contact-form {
+.newsletter-contact-form {
   text-align: center;
+  font-size: 2rem;
+}
+
+.newsletter-contact-form h1 {
+  color: black;
+  font-weight: bold;
+  font-size: 30px;
 }
 
 #fa-envelope {
@@ -149,22 +98,22 @@ p {
 
 .phone-num {
   font-size: 20px;
-  color: #000;
+  color: 0;
 }
 
-#text-crisis {
+.text-crisis {
   font-size: 20px;
   font-weight: bold;
   color: rgba(182, 21, 231, 0.904);
 }
 
-#med-emerg {
+.med-emerg {
   color: red;
   font-weight: 800;
   font-size: 20px;
 }
 
-.footer {
+#footer {
   position: fixed;
   left: 0;
   bottom: 0;
@@ -174,6 +123,6 @@ p {
   text-align: center;
 }
 
-.footer p {
+#footer p {
   color: white;
 }
